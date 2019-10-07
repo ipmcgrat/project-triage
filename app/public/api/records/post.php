@@ -3,14 +3,14 @@
 // Step 0: Validation
 use Ramsey\Uuid\Uuid;
 
-$guid = Uuid::uuid()->toString();
+$guid = Uuid::uuid4()->toString();
 
 // Step 1: Get a datase connection from our help class
 $db = DbConnection::getConnection();
 
 // Step 2: Create & run the query
 $stmt = $db->prepare(
-  'INSERT INTO PatientVisit
+  'INSERT INTO Patient
     (patientGuid, firstName, lastName, dob, sexAtBirth)
   VALUES (?, ?, ?, ?, ?)'
 );
