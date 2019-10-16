@@ -3,7 +3,7 @@
     "description": "An in-class example project",
     "license": "private",
     "authors": [{
-        "name": "Ian McGrath"
+        "name": "Tom Gregory"
     }],
     "require": {
       "ramsey/uuid": "^3.8"
